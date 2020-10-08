@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div>
-      <Form />
+      <Form/>
       <CardList cards={cards}/>
     </div>
   );

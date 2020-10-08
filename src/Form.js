@@ -2,11 +2,16 @@ import React, {useState} from 'react';
 
 export default function Form() {
 	const [title, setTitle] = useState('')
-	return (
-		<form onSubmit={}>
+	const onFormSubmit = () => {
+    console.log("Pokus o odeslání formuláře: ", title)
+    // handleSubmit({title});
+    // this.setState(this.initialState);
+  }
+  return (
+		<form onSubmit={onFormSubmit}>
 			<div className="form">
 				<h2 align='center'>electrometer board</h2>
-        <label for="title">Title</label>
+        <label htmlFor="title">Title</label>
         <input
           type="text"
           id="title"
@@ -20,9 +25,3 @@ export default function Form() {
 		</form>
 	)
 }
-
-    //onFormSubmit = (event) => {
-      //  event.preventDefault();
-        //this.props.handleSubmit(this.state);
-       // this.setState(this.initialState);
-    //}

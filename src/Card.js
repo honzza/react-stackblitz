@@ -1,15 +1,11 @@
 import React from "react";
 
-const DisplayCard = ({name, image, index}) => {
+const DisplayCard = ({name, image}) => {
   return (
     <div className="card">
       <h3>{name}</h3>
-      <tbody>
-        <tr key={index}>
-          <td>vlastnost1</td>
-          <td>vlastnost2</td>
-        </tr>
-      </tbody>
+      <span>vlastnost1</span>
+      <span>vlastnost2</span>
       <img
         src={image}
         width="140"
