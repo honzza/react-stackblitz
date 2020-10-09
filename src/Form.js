@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
-export default function Form() {
+export default function Form(props) {
 	const [title, setTitle] = useState('')
-	const onFormSubmit = () => {
-    console.log("Pokus o odeslání formuláře: ", title)
-    // handleSubmit({title});
-    // this.setState(this.initialState);
+	const onFormSubmit = (event) => {
+    event.preventDefault()
+    props.handleSubmit({name: title, image:'https://bit.ly/33wffJd'});
+    setTitle('')
   }
   return (
 		<form onSubmit={onFormSubmit}>
@@ -17,6 +17,7 @@ export default function Form() {
           id="title"
           name="title"
           placeholder="Insert title"
+          autoComplete="off"
           value={title}
           onChange={event => setTitle(event.target.value)}
         />
