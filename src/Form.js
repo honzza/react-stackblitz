@@ -12,7 +12,7 @@ export default function Form(props) {
   return (
 		<form onSubmit={onFormSubmit}>
 			<div className="form">
-				<h2 align='center'>electrometer board</h2>
+				<h2 align='center'>react card board</h2>
         <label htmlFor="name">Name</label>
         <input
           type="text"
@@ -23,6 +23,7 @@ export default function Form(props) {
           value={name}
           onChange={event => setName(event.target.value)}
         />
+        <label htmlFor="image">Image</label>
         <input
           type="text"
           id="image"
