@@ -1,25 +1,36 @@
 import React, {useState} from 'react';
 
 export default function Form(props) {
-	const [title, setTitle] = useState('')
+	const [name, setName] = useState('')
+  const [image, setImage] = useState('')
 	const onFormSubmit = (event) => {
     event.preventDefault()
-    props.handleSubmit({name: title, image:'https://bit.ly/33wffJd'});
-    setTitle('')
+    props.handleSubmit({name: name, image: image});
+    setName('')
+    setImage('')
   }
   return (
 		<form onSubmit={onFormSubmit}>
 			<div className="form">
 				<h2 align='center'>electrometer board</h2>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
-          id="title"
-          name="title"
-          placeholder="Insert title"
+          id="name"
+          name="name"
+          placeholder="Insert name"
           autoComplete="off"
-          value={title}
-          onChange={event => setTitle(event.target.value)}
+          value={name}
+          onChange={event => setName(event.target.value)}
+        />
+        <input
+          type="text"
+          id="image"
+          name="image"
+          placeholder="Insert image link"
+          autoComplete="off"
+          value={image}
+          onChange={event => setImage(event.target.value)}
         />
 				<button type="submit">Add</button>
 			</div>

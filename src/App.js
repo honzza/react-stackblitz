@@ -5,10 +5,7 @@ import CardList from "./Cardlist";
 
 export default function App() {
 
-  const [cards, setCards] = useState([
-      {name: 'AM370', image: 'https://bit.ly/3jyp2nB'},
-      {name: 'AM365', image: 'https://bit.ly/33wffJd'}
-  ])
+  const [cards, setCards] = useState([])
 
   const handleSubmit = card => {
     setCards(prevCards => {return [...prevCards, card]})
