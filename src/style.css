@@ -7,58 +7,80 @@ body {
   background: #24292e;
 }
 
-.cardcontainer {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  top: 140px;
   z-index: -1;
 }
 
-.form {
-  background: black;
+.form-container {
+  background-color: black;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100vw;
+  right: 0;
   padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 15px;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  background-color: #31363f;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-inline button {
+  padding: 5px 20px;
+  background-color: #d4129a;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-inline button:hover {
+  background-color: #d15dae;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0 0 0;
+  }
+  .form-inline button {
+    margin: 10px 0 0 0;
+  }
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-inline label {
+    display: none;
+  }
 }
 
 .card {
   height: 350px;
   width: 250px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   background: #31363f;
-}
-
-button {
-  background: #d4129a;
-  color: white;
-  width: 80px;
-  height: 2.5em;
-  border: none;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-input[type=text] {
-  background-color: #31363f;
-  color: white;
-  height: 1em;
-  width: 15em;
-  border: none;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  vertical-align: middle;
 }

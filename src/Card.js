@@ -1,14 +1,10 @@
-import React from "react";
+import React from 'react';
 
-const DisplayCard = ({name, image}) => {
+const DisplayCard = ({ name, image }) => {
   return (
     <div className="card">
       <h3>{name}</h3>
-      <img
-        src={image}
-        width="140"
-        alt={name}
-      />
+      <img src={image} width="140" alt={name} />
     </div>
   );
 };
