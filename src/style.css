@@ -12,6 +12,7 @@ body {
   flex-wrap: wrap;
   position: absolute;
   z-index: -1;
+  margin-bottom: 102px;
 }
 
 .form-container {
@@ -68,6 +69,9 @@ body {
   }
   .form-inline label {
     display: none;
+  }
+  .card-container {
+    margin-bottom: 182px;
   }
 }
 
