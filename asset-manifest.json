@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-stackblitz/static/css/main.21a0d94b.chunk.css",
+    "main.css": "/react-stackblitz/static/css/main.a510127a.chunk.css",
     "main.js": "/react-stackblitz/static/js/main.6de4e2f1.chunk.js",
     "main.js.map": "/react-stackblitz/static/js/main.6de4e2f1.chunk.js.map",
     "runtime-main.js": "/react-stackblitz/static/js/runtime-main.71564237.js",
@@ -8,15 +8,15 @@
     "static/js/2.42b03f4f.chunk.js": "/react-stackblitz/static/js/2.42b03f4f.chunk.js",
     "static/js/2.42b03f4f.chunk.js.map": "/react-stackblitz/static/js/2.42b03f4f.chunk.js.map",
     "index.html": "/react-stackblitz/index.html",
-    "precache-manifest.59e0a661f077a365a1aa4242a821b68d.js": "/react-stackblitz/precache-manifest.59e0a661f077a365a1aa4242a821b68d.js",
+    "precache-manifest.698557ef039a1334dc06b545746ff403.js": "/react-stackblitz/precache-manifest.698557ef039a1334dc06b545746ff403.js",
     "service-worker.js": "/react-stackblitz/service-worker.js",
-    "static/css/main.21a0d94b.chunk.css.map": "/react-stackblitz/static/css/main.21a0d94b.chunk.css.map",
+    "static/css/main.a510127a.chunk.css.map": "/react-stackblitz/static/css/main.a510127a.chunk.css.map",
     "static/js/2.42b03f4f.chunk.js.LICENSE.txt": "/react-stackblitz/static/js/2.42b03f4f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.71564237.js",
     "static/js/2.42b03f4f.chunk.js",
-    "static/css/main.21a0d94b.chunk.css",
+    "static/css/main.a510127a.chunk.css",
     "static/js/main.6de4e2f1.chunk.js"
   ]
 }
