@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 
 export default function Form(props) {
@@ -34,5 +34,4 @@ export default function Form(props) {
   );
 }
 //umístění hlášky
-//když bez linku na obrazek-ikona bez obrazku
 //vycistit formular po odeslani
