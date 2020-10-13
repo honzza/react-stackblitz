@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+      import React, { useState } from 'react';
 import './style.css';
 import Form from './Form';
 import CardList from './Cardlist';
 
 export default function App() {
   const [cards, setCards] = useState([]);
-  const handleSubmit = (card) => {
+  const updateCards = (card) => {
     setCards((prevCards) => {
       return [...prevCards, card];
     });
   };
   return (
     <div>
-      <Form handleSubmit={handleSubmit} />
+      <Form updateCards={updateCards} />
       <CardList cards={cards} />
     </div>
   );

@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function Form(props) {
-  const [name, setName] = useState('');
-  const [image, setImage] = useState('');
-  const onFormSubmit = (event) => {
-    event.preventDefault();
-    props.handleSubmit({ name: name, image: image });
-    setName('');
-    setImage('');
-  };
+  const { register, handleSubmit, watch, errors } = useForm();
+  const onSubmit = data => props.updateCards(data);
+
   return (
     <div className="form-container">
       <h3>react card board</h3>
-      <form className="form-inline" onSubmit={onFormSubmit}>
+      <form className="form-inline" onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="name">name</label>
         <input
           type="text"
@@ -20,9 +16,9 @@ export default function Form(props) {
           name="name"
           placeholder="insert name"
           autoComplete="off"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          ref={register({ required: true })}
         />
+        {errors.name && <span>This field is required</span>}
         <label htmlFor="image">image</label>
         <input
           type="text"
@@ -30,11 +26,13 @@ export default function Form(props) {
           name="image"
           placeholder="insert image link"
           autoComplete="off"
-          value={image}
-          onChange={(event) => setImage(event.target.value)}
+          ref={register}
         />
         <button type="submit">add</button>
       </form>
     </div>
   );
 }
+//umístění hlášky
+//když bez linku na obrazek-ikona bez obrazku
+//vycistit formular po odeslani
