@@ -2,8 +2,11 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 export default function Form(props) {
-  const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = data => props.updateCards(data);
+  const { register, handleSubmit, errors } = useForm();
+  const onSubmit = (data, e) => {
+    props.updateCards(data);
+    e.target.reset();
+  };
 
   return (
     <div className="form-container">
@@ -34,4 +37,3 @@ export default function Form(props) {
   );
 }
 //umístění hlášky
-//vycistit formular po odeslani

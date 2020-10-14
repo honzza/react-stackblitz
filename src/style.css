@@ -94,8 +94,9 @@ body {
   background: #31363f;
 }
 
-span, span::before {
-  content: "⚠ ";
+span,
+span::before {
+  content: '⚠ ';
   color: var(--main-theme-color);
   font-size: 14px;
   margin-top: 5px;
