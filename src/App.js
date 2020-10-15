@@ -10,7 +10,7 @@ export default function App() {
     );
     useEffect(() => {
       localStorage.setItem(localStorageKey, JSON.stringify(value));
-    }, [value]);
+    }, [value]); // eslint-disable-line
     return [value, setValue];
   };
 

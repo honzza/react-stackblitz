@@ -22,6 +22,15 @@ export default function Form(props) {
           ref={register({ required: true })}
         />
         {errors.name && <span>This field is required</span>}
+        <label htmlFor="attA">attributeA</label>
+        <input
+          type="text"
+          id="attA"
+          name="attA"
+          placeholder="insert attribute"
+          autoComplete="off"
+          ref={register}
+        />
         <label htmlFor="image">image</label>
         <input
           type="text"

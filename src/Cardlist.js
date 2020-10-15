@@ -9,12 +9,14 @@ const CardList = (props) => {
         card.image === '' ? (
           <DisplayCard
             name={card.name}
+            attA={card.attA}
             image={no_image}
             key={index}
           />
         ) : (
           <DisplayCard
             name={card.name}
+            attA={card.attA}
             image={card.image}
             key={index}
           />
