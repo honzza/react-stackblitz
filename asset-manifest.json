@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-stackblitz/static/css/main.170b71c9.chunk.css",
-    "main.js": "/react-stackblitz/static/js/main.da03dd4a.chunk.js",
-    "main.js.map": "/react-stackblitz/static/js/main.da03dd4a.chunk.js.map",
+    "main.js": "/react-stackblitz/static/js/main.ea543361.chunk.js",
+    "main.js.map": "/react-stackblitz/static/js/main.ea543361.chunk.js.map",
     "runtime-main.js": "/react-stackblitz/static/js/runtime-main.71564237.js",
     "runtime-main.js.map": "/react-stackblitz/static/js/runtime-main.71564237.js.map",
     "static/js/2.ea772f67.chunk.js": "/react-stackblitz/static/js/2.ea772f67.chunk.js",
     "static/js/2.ea772f67.chunk.js.map": "/react-stackblitz/static/js/2.ea772f67.chunk.js.map",
     "index.html": "/react-stackblitz/index.html",
-    "precache-manifest.d1b667a6f17210613527ee480cb4837c.js": "/react-stackblitz/precache-manifest.d1b667a6f17210613527ee480cb4837c.js",
+    "precache-manifest.a0c7f29c9a62e34f8c71b8ff9a1f393d.js": "/react-stackblitz/precache-manifest.a0c7f29c9a62e34f8c71b8ff9a1f393d.js",
     "service-worker.js": "/react-stackblitz/service-worker.js",
     "static/css/main.170b71c9.chunk.css.map": "/react-stackblitz/static/css/main.170b71c9.chunk.css.map",
     "static/js/2.ea772f67.chunk.js.LICENSE.txt": "/react-stackblitz/static/js/2.ea772f67.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.71564237.js",
     "static/js/2.ea772f67.chunk.js",
     "static/css/main.170b71c9.chunk.css",
-    "static/js/main.da03dd4a.chunk.js"
+    "static/js/main.ea543361.chunk.js"
   ]
 }
