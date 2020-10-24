@@ -1,48 +1,76 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { Button, TextField } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+  button: {
+    margin: theme.spacing(1),
+    width: '224.6px'
+  },
+}));
 
 export default function Form(props) {
-  const { register, handleSubmit, errors } = useForm();
+  const { handleSubmit, register, errors } = useForm({
+    mode: 'onChange',
+  });
+  const classes = useStyles();
   const onSubmit = (data, e) => {
     props.updateCards(data);
     e.target.reset();
   };
 
   return (
-    <div className="form-container">
-      <h3>react card board</h3>
-      <form className="form-inline" onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="name">name</label>
-        <input
-          type="text"
+    <div>
+      <form
+        noValidate
+        autoComplete="off"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <TextField
+          className={classes.root}
           id="name"
+          label="Name"
           name="name"
-          placeholder="insert name"
-          autoComplete="off"
-          ref={register({ required: true })}
+          variant="outlined"
+          size="small"
+          inputRef={register({ required: true })}
+          error={!!errors.name}
+          helperText={errors.name && 'Name is required'}
         />
-        {errors.name && <span>This field is required</span>}
-        <label htmlFor="attA">attributeA</label>
-        <input
-          type="text"
+        <TextField
+          className={classes.root}
           id="attA"
+          label="AttributeA"
           name="attA"
-          placeholder="insert attribute"
-          autoComplete="off"
-          ref={register}
+          variant="outlined"
+          size="small"
+          inputRef={register}
         />
-        <label htmlFor="image">image</label>
-        <input
-          type="text"
+        <TextField
+          className={classes.root}
           id="image"
+          label="Image link"
           name="image"
-          placeholder="insert image link"
-          autoComplete="off"
-          ref={register}
+          variant="outlined"
+          size="small"
+          inputRef={register}
         />
-        <button type="submit">add</button>
+        <Button
+          variant="outlined"
+          size="medium"
+          type="submit"
+          className={classes.button}
+        >
+          add
+        </Button>
       </form>
     </div>
   );
 }
-//umístění hlášky

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-theme-color: #d4129a;
 }
 
@@ -21,6 +21,7 @@ body {
 
 .form-container {
   background-color: black;
+  opacity: 50%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -100,4 +101,4 @@ span::before {
   color: var(--main-theme-color);
   font-size: 14px;
   margin-top: 5px;
-}
+}  */
